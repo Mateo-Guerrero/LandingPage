@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,5 +9,146 @@ body {
 }
 
 nav {
-    
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.icono {
+    display: block;
+    /*z-index: 100000;*/
+    /*animation*/
+}
+
+header {
+    background: #251247;
+    background: -webkit-linear-gradient(to right, #6266ad, #251247);
+    background: linear-gradient(to right, #6266ad, #251247);
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img {
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    animation: moverArriba 1s ease-in;
+}
+
+.textos {
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1 {
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2 {
+    font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0px;
+    animation: moverArriba 1s ease-in;
+}
+
+.wave {
+    height: 100%;
+    width: 100%;
+    background: #251247;
+    background: -webkit-linear-gradient(to right, #6266ad, #251247);
+    background: linear-gradient(to right, #6266ad, #251247);
+}
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    transition: all 1s ease;
+
+    width: 100%;
+    background: #251247;
+    background: -webkit-linear-gradient(to right, #6266ad, #251247);
+    background: linear-gradient(to right, #6266ad, #251247);
+}
+
+.uno {
+
+}
+
+.dos {
+
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
